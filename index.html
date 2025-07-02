@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Database Pasien (IndexedDB)</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    input, select, textarea { display: block; margin: 10px 0; padding: 5px; width: 300px; }
+    ul { margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <h2>Form Pendaftaran Pasien</h2>
+  <form id="formPasien">
+    <input type="text" id="nama" placeholder="Nama" required>
+    <select id="jenisKelamin" required>
+      <option value="">Pilih Jenis Kelamin</option>
+      <option value="Laki-laki">Laki-laki</option>
+      <option value="Perempuan">Perempuan</option>
+    </select>
+    <input type="number" id="umur" placeholder="Umur" required>
+    <textarea id="alamat" placeholder="Alamat" required></textarea>
+    <button type="submit">Simpan</button>
+  </form>
+
+  <h3>Daftar Pasien</h3>
+  <ul id="daftarPasien"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
